@@ -59,17 +59,24 @@ body>footer {
 .container {
     position: relative;
     color: rgb(181, 6, 6);
-    text-align: center;
+    text-align: left;
 }
 
 .paragraph {
     font-family: Playfair Display, sans-serif;
     text-align: left;
     font-size: 20px;
-    color: #081621;
+    color: #3a7cae;
 }
 
 #about-game {
+    font-family: Playfair Display, sans-serif;
+    text-align: left;
+    font-size: 30px;
+    color: rgb(181, 6, 6);
+}
+
+h3 {
     font-family: Playfair Display, sans-serif;
     text-align: center;
     font-size: 30px;

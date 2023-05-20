@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato:wght@300&family=Oswald&family=Playfair+Display&display=swap');
+
 
 * {
     margin: 0;
@@ -25,7 +26,7 @@ body>footer {
 }
 
 #logo {
-    font-family: Playfair Display, sans-serif;
+    font-family: Bangers, sans-serif;
     font-size: 65px;
     color: rgb(181, 6, 6);
     text-align: left;

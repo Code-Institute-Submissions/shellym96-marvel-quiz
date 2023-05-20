@@ -55,3 +55,23 @@ body>footer {
 .socials li a i {
     margin-right: 8px;
 }
+
+.container {
+    position: relative;
+    color: rgb(181, 6, 6);
+    text-align: center;
+}
+
+.paragraph {
+    font-family: Playfair Display, sans-serif;
+    text-align: left;
+    font-size: 20px;
+    color: #081621;
+}
+
+#about-game {
+    font-family: Playfair Display, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(181, 6, 6);
+}

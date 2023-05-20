@@ -31,3 +31,27 @@ body>footer {
     text-align: left;
     padding-bottom: 50px;
 }
+
+.socials {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.socials li {
+    list-style: none;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+.socials li a {
+    text-decoration: none;
+    color: black;
+}
+
+.socials li a i {
+    margin-right: 8px;
+}

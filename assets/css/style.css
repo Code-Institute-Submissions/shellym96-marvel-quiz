@@ -100,4 +100,25 @@ h3 {
     margin:0 auto;
     margin-top: 20px;
     transition: 0.5s ease-in-out all;
+    display: flex;
+    justify-content: center;
+}
+
+#restart-button:hover {
+    transform: scale(1.3);
+}
+
+#restart-button {
+    border: 2px outset goldenrod;
+    text-align: center;
+    font-size: 90%;
+    background-color: rgb(198, 4, 4);
+    color: #3a7cae;
+    border-radius: 50px;
+    padding: 15px 32px 15px 32px;
+    margin:0 auto;
+    margin-top: 20px;
+    transition: 0.5s ease-in-out all;
+    display: flex;
+    justify-content: center;
 }

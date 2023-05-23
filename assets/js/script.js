@@ -2,30 +2,16 @@
 let startBtn = document.getElementById("start-button");
 let restartBtn = document.getElementById("restart-button");
 let gameArea = document.getElementById("game");
+let logo = document.getElementById("logo");
+let intro = document.getElementById("intro");
 
 startBtn.addEventListener("click", startGame);
 
 function startGame() {
     game.classList.remove("hide");
     startBtn.classList.add("hide");
-}
-
-
-
-
-/*
-let startBtn = document.getElementById("start-button");
-let logo = document.getElementById("logo");
-let intro = document.getElementById("intro");
-let start = document.getElementById("start");
-let gameArea = document.getElementById("game-area");
-
-startBtn.addEventListener("click", function() {
-    logo.classList.add("hide");
     intro.classList.add("hide");
-    start.classList("hide");
-    gameArea.classList.remove("hide");
-}); */
+}
 
 const questions = [
     {
@@ -279,4 +265,5 @@ const questions = [
                 "points": 3
             }
         ]
-    },
+    }
+]

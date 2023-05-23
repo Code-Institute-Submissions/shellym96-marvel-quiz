@@ -5,9 +5,13 @@ let gameArea = document.getElementById("game");
 let logo = document.getElementById("logo");
 let intro = document.getElementById("intro");
 let restart = document.getElementById("restart-button");
-let questions = document.getElementById("question");
+let questionSpan = document.getElementById("question");
 let buttons = document.getElementById(".btn");
 let finalResult = document.getElementById("final-result");
+let totalPoints = 0;
+let currentQuestion = 0;
+let shuffleQuestions;
+let shuffledChoices;
 
 
 startBtn.addEventListener("click", startGame);
@@ -15,8 +19,26 @@ startBtn.addEventListener("click", startGame);
 function startGame() {
     game.classList.remove("hide");
     startBtn.classList.add("hide");
-    intro.classList.add("hide");
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    getNextQuestion();
 }
+
+function getNextQuestion(){
+    shuffleQuestions.forEach((question, questionIndex) => {
+        if (questionIndex == currentQuestion) {
+            shuffledChoices = question.choices.sort(() => Math.random() - 0.5);
+            questionSpan.innerText = question.question 
+                shuffledChoices.forEach((choice, choiceIndex) => {
+                    buttons.forEach((btn, buttonIndex) => {
+                        if (choiceIndex == buttonIndex) {
+                            btn.innerText = choice.option;
+                            btn.dataset.points = choice.points;
+                        }
+                    });
+                 });
+                }
+              });
+            }
 
 const questions = [
     {

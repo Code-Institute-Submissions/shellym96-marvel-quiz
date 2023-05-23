@@ -1,5 +1,19 @@
 /* jshint esversion */
+let startBtn = document.getElementById("start-button");
+let restartBtn = document.getElementById("restart-button");
+let gameArea = document.getElementById("game");
 
+startBtn.addEventListener("click", startGame);
+
+function startGame() {
+    game.classList.remove("hide");
+    startBtn.classList.add("hide");
+}
+
+
+
+
+/*
 let startBtn = document.getElementById("start-button");
 let logo = document.getElementById("logo");
 let intro = document.getElementById("intro");
@@ -11,11 +25,11 @@ startBtn.addEventListener("click", function() {
     intro.classList.add("hide");
     start.classList("hide");
     gameArea.classList.remove("hide");
-});
+}); */
 
 const questions = [
     {
-        "question": "What skill seperates you from others?",
+        question: "What skill seperates you from others?",
         "choices": [
             {
                 "option": "You can shoot on the bullseye.",
@@ -266,4 +280,3 @@ const questions = [
             }
         ]
     },
-]

@@ -4,6 +4,11 @@ let restartBtn = document.getElementById("restart-button");
 let gameArea = document.getElementById("game");
 let logo = document.getElementById("logo");
 let intro = document.getElementById("intro");
+let restart = document.getElementById("restart-button");
+let questions = document.getElementById("question");
+let buttons = document.getElementById(".btn");
+let finalResult = document.getElementById("final-result");
+
 
 startBtn.addEventListener("click", startGame);
 

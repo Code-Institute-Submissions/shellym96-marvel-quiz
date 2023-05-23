@@ -19,6 +19,7 @@ startBtn.addEventListener("click", startGame);
 function startGame() {
     game.classList.remove("hide");
     startBtn.classList.add("hide");
+    intro.classList.add("hide");
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     getNextQuestion();
 }

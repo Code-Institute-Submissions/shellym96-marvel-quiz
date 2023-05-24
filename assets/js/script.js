@@ -45,7 +45,65 @@ function getNextQuestion() {
                 btn.addEventListener("click", userSelectedButton);
             });
 
-            
+            function userSelectedButton(e) {
+                totalPoints += parseInt(e.target.dataset.points);
+                currentQuestion += 1;
+                if (currentQuestion < 14) {
+                    getNextQuestion();
+                } else {
+                    calculateResults();
+                }
+            }
+
+            function calculateResults() {
+                let result = "";
+                if (totalPoints >= 9) {
+                    result = "hero here";
+                } else if (totalPoints >4 && totalPoints <= 6) {
+                    result = "hero here";
+                } else if (totalPoints >4 && totalPoints <= 6) {
+                    result = "hero here";
+                } else if (totalPoints >3 && totalPoints <= 1) {
+                    result = "hero here";
+                } else if (totalPoints >4 && totalPoints <= 6) {
+                    result = "hero here";
+                } else if (totalPoints >4 && totalPoints <= 6) {
+                    result = "hero here";
+                } else if (totalPoints >4 && totalPoints <= 6) {
+                    result = "hero here";
+                } else if (totalPoints >4 && totalPoints <= 6) {
+                    result = "hero here";
+                } else if (totalPoints >4 && totalPoints <= 6) {
+                    result = "hero here";
+                } else if (totalPoints >4 && totalPoints <= 6) {
+                    result = "hero here";
+                } else if (totalPoints >4 && totalPoints <= 6) {
+                    result = "hero here";
+                } else if (totalPoints >4 && totalPoints <= 6) {
+                    result = "hero here";
+                } else if (totalPoints >4 && totalPoints <= 6) {
+                    result = "hero here";
+                } else if (totalPoints >4 && totalPoints <= 6) {
+                    result = "hero here";
+                } 
+/*
+                finalResult.classList.remove("hide");
+                finalResult.innerText = `Your personality is most similar to ${result}`;
+                game.classList.add("hide");
+                restart.classList.remove("hide");
+            }
+
+            restart.addEventListener("click", resetGame);
+
+            function resetGame() {
+                restart.classList.add("hide");
+                startBtn.classList.remove("hide");
+                currentQuestion = 0;
+                totalPoints = 0;
+                finalResult.classList.add("hide");
+            }
+*/
+
 
 
 

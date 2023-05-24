@@ -98,6 +98,7 @@ function getNextQuestion() {
             function resetGame() {
                 restart.classList.add("hide");
                 startBtn.classList.remove("hide");
+                intro.classList.remove("hide");
                 currentQuestion = 0;
                 totalPoints = 0;
                 finalResult.classList.add("hide");

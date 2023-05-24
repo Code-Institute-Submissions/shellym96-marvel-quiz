@@ -20,11 +20,11 @@ function startGame() {
     game.classList.remove("hide");
     startBtn.classList.add("hide");
     intro.classList.add("hide");
-    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    shuffleQuestions = questions.sort(() => Math.random() - 0.5);
     getNextQuestion();
 }
 
-function getNextQuestion(){
+function getNextQuestion() {
     shuffleQuestions.forEach((question, questionIndex) => {
         if (questionIndex == currentQuestion) {
             shuffledChoices = question.choices.sort(() => Math.random() - 0.5);

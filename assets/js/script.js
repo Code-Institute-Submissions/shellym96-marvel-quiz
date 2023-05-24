@@ -86,7 +86,7 @@ function getNextQuestion() {
                 } else if (totalPoints >4 && totalPoints <= 6) {
                     result = "hero here";
                 } 
-/*
+
                 finalResult.classList.remove("hide");
                 finalResult.innerText = `Your personality is most similar to ${result}`;
                 game.classList.add("hide");
@@ -102,7 +102,7 @@ function getNextQuestion() {
                 totalPoints = 0;
                 finalResult.classList.add("hide");
             }
-*/
+
 
 
 

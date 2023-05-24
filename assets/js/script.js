@@ -41,6 +41,18 @@ function getNextQuestion() {
               });
             }
 
+            buttons.forEach(btn => {
+                btn.addEventListener("click", userSelectedButton);
+            });
+
+            
+
+
+
+
+
+
+
 const questions = [
     {
         question: "What skill seperates you from others?",

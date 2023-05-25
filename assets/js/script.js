@@ -57,33 +57,33 @@ function getNextQuestion() {
 
             function calculateResults() {
                 let result = "";
-                if (totalPoints >= 9) {
+                if (totalPoints >= 14) {
+                    result = "Thor! Because you are a strong willed individual with huge family values. You may disagree with the views your close ones have, but you will have their back and protect them regardless of differences!";
+                } else if (totalPoints >4 && totalPoints <= 17) {
                     result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 6) {
+                } else if (totalPoints >4 && totalPoints <= 12) {
                     result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 6) {
+                } else if (totalPoints >3 && totalPoints <= 11) {
                     result = "hero here";
-                } else if (totalPoints >3 && totalPoints <= 1) {
+                } else if (totalPoints >4 && totalPoints <= 10) {
                     result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 6) {
+                } else if (totalPoints >4 && totalPoints <= 9) {
                     result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 6) {
+                } else if (totalPoints >4 && totalPoints <= 15) {
                     result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 6) {
+                } else if (totalPoints >4 && totalPoints <= 13) {
                     result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 6) {
+                } else if (totalPoints >4 && totalPoints <= 11) {
                     result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 6) {
+                } else if (totalPoints >4 && totalPoints <= 9 ) {
                     result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 6) {
+                } else if (totalPoints >4 && totalPoints <= 7) {
                     result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 6) {
+                } else if (totalPoints >4 && totalPoints <= 5) {
                     result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 6) {
+                } else if (totalPoints >2 && totalPoints <= 3) {
                     result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 6) {
-                    result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 6) {
+                } else if (totalPoints >1 && totalPoints <= 0) {
                     result = "hero here";
                 } 
 

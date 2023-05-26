@@ -48,7 +48,7 @@ function getNextQuestion() {
             function userSelectedButton(e) {
                 totalPoints += parseInt(e.target.dataset.points);
                 currentQuestion += 1;
-                if (currentQuestion < 14) {
+                if (currentQuestion < 12) {
                     getNextQuestion();
                 } else {
                     calculateResults();
@@ -57,35 +57,21 @@ function getNextQuestion() {
 
             function calculateResults() {
                 let result = "";
-                if (totalPoints >= 14) {
+                if (totalPoints <= 4) {
                     result = "Thor! Because you are a strong willed individual with huge family values. You may disagree with the views your close ones have, but you will have their back and protect them regardless of differences!";
-                } else if (totalPoints >4 && totalPoints <= 17) {
-                    result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 12) {
-                    result = "hero here";
-                } else if (totalPoints >3 && totalPoints <= 11) {
-                    result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 10) {
-                    result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 9) {
-                    result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 15) {
-                    result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 13) {
-                    result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 11) {
-                    result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 9 ) {
-                    result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 7) {
-                    result = "hero here";
-                } else if (totalPoints >4 && totalPoints <= 5) {
-                    result = "hero here";
-                } else if (totalPoints >2 && totalPoints <= 3) {
-                    result = "hero here";
-                } else if (totalPoints >1 && totalPoints <= 0) {
-                    result = "hero here";
-                } 
+                } else if (totalPoints >18 && totalPoints <= 24) {
+                    result = "Black Widow!";
+                } else if (totalPoints >4 && totalPoints <= 8) {
+                    result = "Captain America!";
+                } else if (totalPoints >24 && totalPoints <= 29) {
+                    result = "Hulk!";
+                } else if (totalPoints >29 && totalPoints <= 32) {
+                    result = "Hawkeye!";
+                } else if (totalPoints >12 && totalPoints <= 18) {
+                    result = "Ironman!";
+                } else if (totalPoints >8 && totalPoints <= 12) {
+                    result = "Nick Fury!";
+                };
 
                 finalResult.classList.remove("hide");
                 finalResult.innerText = `Your personality is most similar to ${result}`;
@@ -139,19 +125,19 @@ const questions = [
         choices: [
             {
                 option: "Strong and confident.",
-                points: 0
+                points: 3
             },
             {
                  option: "Responsible and experienced.",
-                 points: 1
+                 points: 2
             },
             {
                 option: "Witty and good-looking.",
-                points: 2
+                points: 0
             },
             {
                 option: "Friendly and funny",
-                points: 3
+                points: 1
             }
         ]
     },
@@ -164,11 +150,11 @@ const questions = [
             },
             {
                  option: "Duty.",
-                 points: 1
+                 points: 2
             },
             {
                 option: "Jealousy.",
-                points: 2
+                points: 1
             },
             {
                 option: "Revenge.",
@@ -189,11 +175,11 @@ const questions = [
             },
             {
                 option: "Flaunt your powers to become rich and famous.",
-                points: 2
+                points: 3
             },
             {
                 option: "Share the secret with friends and family only.",
-                points: 3
+                points: 2
             }
         ]
     },
@@ -206,7 +192,7 @@ const questions = [
             },
             {
                  option: "Selfish and manipulative.",
-                 points: 1
+                 points: 3
             },
             {
                 option: "Tough exterior, soft interior.",
@@ -214,7 +200,7 @@ const questions = [
             },
             {
                 option: "Protective, put your life on the line at all costs. ",
-                points: 3
+                points: 1
             }
         ]
     },
@@ -227,7 +213,7 @@ const questions = [
             },
             {
                  option: "Loaner.",
-                 points: 1
+                 points: 3
             },
             {
                 option: "Extreme extrovert.",
@@ -235,7 +221,7 @@ const questions = [
             },
             {
                 option: "Perfectionist.",
-                points: 3
+                points: 1
             }
         ]
     },
@@ -244,19 +230,19 @@ const questions = [
         choices: [
             {
                 option: "Class clown.",
-                points: 0
+                points: 1
             },
             {
                  option: "Always had head buried in books.",
-                 points: 1
+                 points: 2
             },
             {
                 option: "Too smart for school, so never went.",
-                points: 2
+                points: 3
             },
             {
                 option: "Teachers pet just to get by.",
-                points: 3
+                points: 0
             }
         ]
     },
@@ -269,7 +255,7 @@ const questions = [
             },
             {
                  option: "Go handle them on your own.",
-                 points: 1
+                 points: 3
             },
             {
                 option: "Wait for someone else to take charge.",
@@ -277,7 +263,7 @@ const questions = [
             },
             {
                 option: "Rally your team to attack together.",
-                points: 3
+                points: 1
             }
         ]
     },
@@ -286,19 +272,19 @@ const questions = [
         choices: [
             {
                 option: "Ego.",
-                points: 0
+                points: 1
             },
             {
                  option: "Heart.",
-                 points: 1
+                 points: 0
             },
             {
                 option: "Temper.",
-                points: 2
+                points: 3
             },
             {
                 option: "Ability to work as a team.",
-                points: 3
+                points: 2
             }
         ]
     },
@@ -349,7 +335,7 @@ const questions = [
         choices: [
             {
                 option: "Always cool, calm and collected.",
-                points: 0
+                points: 2
             },
             {
                  option: "Go with the flow, easy going.",
@@ -357,7 +343,7 @@ const questions = [
             },
             {
                 option: "Very nervous unsure person.",
-                points: 2
+                points: 0
             },
             {
                 option: "Easily angered and frustrated.",

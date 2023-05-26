@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato:wght@300&family=Oswald&family=Playfair+Display&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:wght@300&family=Lato:wght@300&family=Oswald&family=PT+Sans+Caption&family=Playfair+Display&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -31,6 +29,8 @@ body>footer {
     color: rgb(181, 6, 6);
     text-align: left;
     padding-bottom: 50px;
+    padding-left: 80px;
+
 }
 
 .socials {
@@ -64,21 +64,21 @@ body>footer {
 }
 
 .paragraph {
-    font-family: Playfair Display, sans-serif;
+    font-family: PT Sans Caption, sans-serif;
     text-align: left;
     font-size: 20px;
     color: #3a7cae;
 }
 
 #about-game {
-    font-family: Playfair Display, sans-serif;
+    font-family: PT Sans Caption, sans-serif;
     text-align: left;
     font-size: 30px;
     color: rgb(181, 6, 6);
 }
 
 h3 {
-    font-family: Playfair Display, sans-serif;
+    font-family: PT Sans Caption, sans-serif;
     text-align: center;
     font-size: 30px;
     color: rgb(181, 6, 6);
@@ -102,6 +102,19 @@ h3 {
     transition: 0.5s ease-in-out all;
     display: flex;
     justify-content: center;
+}
+
+#question {
+    width: fit-content;
+    height: auto;
+    color: #3a7cae;
+    position: center;
+    font-size: 25px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
 }
 
 #restart-button:hover {

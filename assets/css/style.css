@@ -38,6 +38,7 @@ body>footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    position: sticky;
 }
 
 .socials li {
@@ -46,15 +47,18 @@ body>footer {
     padding: 15px;
     border-radius: 10px;
     margin: 1em;
+    position: sticky;
 }
 
 .socials li a {
     text-decoration: none;
     color: black;
+    position: sticky;
 }
 
 .socials li a i {
     margin-right: 8px;
+    position: sticky;
 }
 
 .container {
@@ -113,8 +117,20 @@ h3 {
 }
 
 .btn {
-    display: flex;
-    justify-content: space-between;
+    width: 20%;
+    height: 50px;
+    color: rgb(181, 6, 6);
+    font-family: PT Sans Caption, sans-serif;
+    border: #1b99f9 3px solid;
+    background-image: linear-gradient(to left, transparent 50%, white 50%);
+    background-size: 200%;
+    background-position: 0%;
+    display: inline-block;
+}
+
+.btn:hover {
+    color: #1b99f9;
+    background-position: 100%;
 }
 
 #restart-button:hover {

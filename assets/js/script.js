@@ -103,19 +103,19 @@ const questions = [
         question: "What skill seperates you from others?",
         choices: [
             {
-                option: "You can shoot on the bullseye.",
+                option: "I can shoot on the bullseye.",
                 points: 0
             },
             {
-                 option: "You are a super fast runner.",
+                 option: "I am extremely rational and intelligent.",
                  points: 1
             },
             {
-                option: "You have a way with words.",
+                option: "I have a way with words.",
                 points: 2
             },
             {
-                option: "You have extremely strong strength.",
+                option: "I have extremely strong strength.",
                 points: 3
             }
         ]
@@ -166,36 +166,36 @@ const questions = [
         question: "If you were a superhero, you would...",
         choices: [
             {
-                option: "Hide your idenity to protect your close ones.",
+                option: "Hide my idenity to protect your close ones.",
                 points: 0
             },
             {
-                 option: "Live life as if you dont have any powers at all.",
+                 option: "Live life as if I dont have any powers at all.",
                  points: 1
             },
             {
-                option: "Flaunt your powers to become rich and famous.",
+                option: "Flaunt my powers to become rich and famous.",
                 points: 3
             },
             {
-                option: "Share the secret with friends and family only.",
+                option: "Share the secret with my friends and family only.",
                 points: 2
             }
         ]
     },
     {
-        question: "People close to you would consider you a...",
+        question: "People close to you would consider you ...",
         choices: [
             {
-                option: "Generous, big hearted person.",
+                option: "Generous and big hearted person.",
                 points: 0
             },
             {
-                 option: "Selfish and manipulative.",
+                 option: "Selfish and a manipulative individual.",
                  points: 3
             },
             {
-                option: "Tough exterior, soft interior.",
+                option: "To have a tough exterior, soft interior.",
                 points: 2
             },
             {
@@ -233,11 +233,11 @@ const questions = [
                 points: 1
             },
             {
-                 option: "Always had head buried in books.",
+                 option: "Always hadmy  head buried in books.",
                  points: 2
             },
             {
-                option: "Too smart for school, so never went.",
+                option: "Too smart for school, so I never went.",
                 points: 3
             },
             {
@@ -247,14 +247,14 @@ const questions = [
         ]
     },
     {
-        question: "It's looks like the enemy is closing in, what do you do?",
+        question: "It looks like the enemy is closing in, what do you do?",
         choices: [
             {
                 option: "Cause a distraction so your team can come up behind them.",
                 points: 0
             },
             {
-                 option: "Go handle them on your own.",
+                 option: "Go handle them on my own.",
                  points: 3
             },
             {
@@ -262,7 +262,7 @@ const questions = [
                 points: 2
             },
             {
-                option: "Rally your team to attack together.",
+                option: "Rally my team to attack together.",
                 points: 1
             }
         ]
@@ -292,7 +292,7 @@ const questions = [
         question: "Who was your favourite hero when you were young?",
         choices: [
             {
-                option: "Buzzlight year.",
+                option: "Superman.",
                 points: 0
             },
             {
@@ -304,7 +304,7 @@ const questions = [
                 points: 2
             },
             {
-                option: "Myself.",
+                option: "I was my own hero.",
                 points: 3
             }
         ]
@@ -325,7 +325,7 @@ const questions = [
                 points: 2
             },
             {
-                option: "Me in general is an asset.",
+                option: "I am an asset in general.",
                 points: 3
             }
         ]

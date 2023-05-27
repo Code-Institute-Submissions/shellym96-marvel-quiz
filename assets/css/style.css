@@ -32,7 +32,7 @@ body>footer {
     padding-left: 80px;
 
 }
-
+/* CSS for welcome page */
 .socials {
     text-align: center;
     display: flex;
@@ -103,7 +103,7 @@ h3 {
     display: flex;
     justify-content: center;
 }
-
+/* CSS for questions and answers */
 #question {
     width: fit-content;
     height: auto;

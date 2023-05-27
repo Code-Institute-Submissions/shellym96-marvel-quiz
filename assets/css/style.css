@@ -112,22 +112,22 @@ h3 {
     font-size: 25px;
 }
 
+#game {
+    align-items: center;
+}
+
 .btn {
     width: 20%;
     height: 50px;
     color: rgb(181, 6, 6);
     text-align: center;
     font-family: PT Sans Caption, sans-serif;
-    border: #1b99f9 3px solid;
-    background-image: linear-gradient(to left, transparent 50%, white 50%);
-    background-size: 200%;
-    background-position: 0%;
-   flex-direction: column;
+    display: inline-block;
+    margin: 10px;
 }
 
 .btn:hover {
-    color: #1b99f9;
-    background-position: 100%;
+    box-shadow: inset 5px 5px 5px 5px #1b99f9, 5px 13px 20px 5px #1b99f9;
 }
 
 #restart-button:hover {

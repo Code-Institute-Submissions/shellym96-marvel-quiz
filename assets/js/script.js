@@ -233,7 +233,7 @@ const questions = [
                 points: 1
             },
             {
-                 option: "Always hadmy  head buried in books.",
+                 option: "Always had my head buried in books.",
                  points: 2
             },
             {

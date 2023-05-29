@@ -58,19 +58,19 @@ function getNextQuestion() {
             function calculateResults() {
                 let result = "";
                 if (totalPoints <= 4) {
-                    result = "Thor! Because you are a strong willed individual with huge family values. You may disagree with the views your close ones have, but you will have their back and protect them regardless of differences!";
+                    result = "Thor! Because like Thor, you have a very charming personality! You know how to work a room, with your bold, energetic presence!";
                 } else if (totalPoints >18 && totalPoints <= 24) {
-                    result = "Black Widow!";
+                    result = "Black Widow! You are very practical. Although you love to be free, you are drawn to understand how things work. Things never slide by you.";
                 } else if (totalPoints >4 && totalPoints <= 8) {
-                    result = "Captain America!";
+                    result = "Captain America! Sweet, kind and thoughtful are the words to describe your personailty as well as Cap A! Always working to serve others, because helping others is your main focus.";
                 } else if (totalPoints >24 && totalPoints <= 29) {
-                    result = "Hulk!";
+                    result = "Hulk! As an extremely emotional indiviual with a slight temper problem, you relate most you the Hulk! Do you have trouble remembering important dates? Well so does he!";
                 } else if (totalPoints >29 && totalPoints <= 32) {
-                    result = "Hawkeye!";
+                    result = "Hawkeye! A very strong introvert. You think very logically, extremely observant of what goes on around you in the real world.";
                 } else if (totalPoints >12 && totalPoints <= 18) {
-                    result = "Ironman!";
+                    result = "Ironman! Love being the center of attention? Whilst being an extrovert, and the center of every room you have a brain that works like no other. You are hugely intelligent, and caring. ";
                 } else if (totalPoints >8 && totalPoints <= 12) {
-                    result = "Nick Fury!";
+                    result = "Nick Fury! Along with your witty personality, sharp workmanship and even better sense of humor is your ability to take the lead. You are a decisive, capable. principled person.";
                 };
 
                 finalResult.classList.remove("hide");

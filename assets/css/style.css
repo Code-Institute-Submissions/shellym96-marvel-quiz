@@ -54,7 +54,7 @@ body>footer {
 
 .socials li a {
     text-decoration: none;
-    color: rgb(181, 6, 6);
+    color: navy;
 }
 
 .socials li a i {
@@ -114,24 +114,24 @@ h3 {
 /* CSS for questions and answers */
 
 #question {
-    width: fit-content;
-    height: auto;
-    color: #3a7cae;
+    color: silver;
     align-items: center;
     font-size: 25px;
+    margin-left: 5%;
+    margin-top: 20%;
 }
 
 #qbuttons {
     text-align: center;
     margin: auto;
-    padding-bottom: 20%;
-    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-top: 10%;
 }
 
 .btn {
     width: 40%;
     height: 50px;
-    color: rgb(181, 6, 6);
+    color: navy;
     background-color: rgb(193, 188, 188);
     text-align: center;
     font-family: PT Sans Caption, sans-serif;
@@ -144,11 +144,11 @@ h3 {
 }
 
 .btn:hover {
-    box-shadow:  0px 5px 15px 0 #1b99f9 inset, 0px 5px 15px 0 #1b99f9 inset;
+    box-shadow:  0px 5px 15px 0 rgb(198, 4, 4) inset, 0px 5px 15px 0 rgb(198, 4, 4) inset;
 }
 
 .btn:active {
-    box-shadow: 0px 5px 15px 0 #1b99f9 inset;
+    box-shadow: 0px 5px 15px 0 rgb(198, 4, 4) inset;
     transform: translateY(2px);
 }
 

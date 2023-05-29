@@ -67,18 +67,45 @@ body>footer {
     text-align: left;
 }
 
-.paragraph {
+/* .paragraph { 
     font-family: PT Sans Caption, sans-serif;
     text-align: left;
     font-size: 20px;
     color: #3a7cae;
+} */
+
+#intro {
+    padding-top: 30px;
+}
+
+.li1 {
+    font-family: PT Sans Caption, sans-serif;
+    text-align: left;
+    font-size: 22px;
+    color: #3a7cae;
+    padding-bottom: 30px;
+}
+.li2 {
+    font-family: PT Sans Caption, sans-serif;
+    text-align: left;
+    font-size: 22px;
+    color: silver;
+    padding-bottom: 30px;
+}
+
+.li3 {
+    font-family: PT Sans Caption, sans-serif;
+    text-align: left;
+    font-size: 22px;
+    color: rgb(198, 4, 4);
 }
 
 #about-game {
     font-family: PT Sans Caption, sans-serif;
-    text-align: left;
-    font-size: 30px;
-    color: rgb(181, 6, 6);
+    text-align: center;
+    font-size: 35px;
+    color: silver;
+    margin-top: 5%;
 }
 h5 {
     font-size: 25px;
@@ -101,11 +128,12 @@ h3 {
     text-align: center;
     font-size: 90%;
     background-color: rgb(198, 4, 4);
-    color: #3a7cae;
+    color: black;
     border-radius: 50px;
     padding: 15px 32px 15px 32px;
     margin:0 auto;
-    margin-top: 20px;
+    margin-top: 5%;
+    margin-bottom: 8%;
     transition: 0.5s ease-in-out all;
     display: flex;
     justify-content: center;
@@ -157,18 +185,23 @@ h3 {
 }
 
 #restart-button {
-    border: 2px outset goldenrod;
+    border: 2px outset silver;
     text-align: center;
     font-size: 90%;
     background-color: rgb(198, 4, 4);
-    color: #3a7cae;
+    color: black;
     border-radius: 50px;
     padding: 15px 32px 15px 32px;
     margin:0 auto;
-    margin-top: 20px;
+    margin-top: 5%;
+    margin-bottom: 8%;
     transition: 0.5s ease-in-out all;
     display: flex;
     justify-content: center;
+}
+
+#final-result {
+    font-size: 40px;
 }
 
 .hide {

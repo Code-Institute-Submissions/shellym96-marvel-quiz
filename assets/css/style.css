@@ -132,7 +132,7 @@ h3 {
     width: 40%;
     height: 50px;
     color: navy;
-    background-color: rgb(193, 188, 188);
+    background-color: rgb(228, 224, 224);
     text-align: center;
     font-family: PT Sans Caption, sans-serif;
     display: inline-block;
@@ -173,4 +173,21 @@ h3 {
 
 .hide {
     display: none !important;
+}
+
+/* for media screen sizes from 960px wide and down */
+@media screen and (max-width: 950px) {
+    #logo {
+        clear: left;
+        float: left;
+    }
+
+    #intro {
+        clear: left;
+        float: left;
+    }
+
+    #start-button {
+        text-align: center;
+    }
 }

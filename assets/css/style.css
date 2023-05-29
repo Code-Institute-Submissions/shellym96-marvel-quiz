@@ -177,11 +177,9 @@ h3 {
 
 /* for media screen sizes from 960px wide and down */
 @media screen and (max-width: 950px) {
-    #logo {
-        clear: left;
-        float: left;
-        width: 100%;
-        height: auto;
+    #logo img {
+       width: 70%;
+       height: auto;
     }
 
     #intro {

@@ -7,10 +7,10 @@
 html,
 body {
   height: 100%;
-  background-color: #081621;
 }
 
 body {
+  background-color: #081621;
   background-image: url(../images/avengers1.jpeg);
   height: 100vh;
   width: 100%;
@@ -67,13 +67,6 @@ body > footer {
   text-align: left;
 }
 
-/* .paragraph { 
-    font-family: PT Sans Caption, sans-serif;
-    text-align: left;
-    font-size: 20px;
-    color: #3a7cae;
-} */
-
 #intro {
   padding-top: 30px;
 }
@@ -105,7 +98,7 @@ body > footer {
   text-align: center;
   font-size: 35px;
   color: silver;
-  margin-top: 5%;
+  margin: 3% auto;
 }
 
 #start-button:hover {

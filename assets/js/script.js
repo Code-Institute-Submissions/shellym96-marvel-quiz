@@ -9,7 +9,7 @@ let totalPoints = 0;
 let currentQuestion = 0;
 let shuffleQuestions;
 let shuffledChoices;
-let game;
+let game = document.getElementById("game");
 
 
 startBtn.addEventListener("click", startGame);

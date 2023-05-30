@@ -1,4 +1,4 @@
-/* jshint esversion */
+/* jshint esversion: 11 */
 let startBtn = document.getElementById("start-button");
 let restartBtn = document.getElementById("restart-button");
 let gameArea = document.getElementById("game");

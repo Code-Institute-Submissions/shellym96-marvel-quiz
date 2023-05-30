@@ -62,7 +62,7 @@ function calculateResults() {
     } else if (totalPoints > 8 && totalPoints <= 12) {
         result = "Nick Fury! Along with your witty personality, sharp workmanship and even better sense of humor is your ability to take the lead. You are a decisive, capable. principled person.";
     } else if (totalPoints > 12 && totalPoints <= 18) {
-        result = "Ironman! Love being the center of attention? Whilst being an extrovert, and the center of every room you have a brain that works like no other. You are hugely intelligent, and caring. ";
+        result = "Ironman! You love being the center of attention? Whilst being an extrovert, and the center of every room you have a brain that works like no other. You are hugely intelligent, and caring. ";
     } else if (totalPoints > 18 && totalPoints <= 24) {
         result = "Black Widow! You are very practical. Although you love to be free, you are drawn to understand how things work. Things never slide by you.";
     } else if (totalPoints > 24 && totalPoints <= 29) {

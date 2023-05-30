@@ -174,15 +174,22 @@ body > footer {
 }
 
 #final-result {
-  font-size: 40px;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  background-color: silver;
+  opacity: 0.5 ;
+  width: 50%;
 }
 
 .hide {
   display: none !important;
 }
 
-/* for media screen sizes from 960px wide and down */
-@media screen and (max-width: 950px) {
+
+/* media screen sizes 960 and below */
+@media screen and (max-width: 960px) {
+  
   #logo img {
     width: 70%;
     height: auto;
@@ -190,7 +197,7 @@ body > footer {
 
   #intro {
     clear: left;
-    float: left;
+    text-align: center;
   }
 
   #start-button {
@@ -206,4 +213,11 @@ body > footer {
     width: 90%;
     text-align: center;
   }
+}
+
+@media screen and (max-width: 800px){
+  #intro {
+    padding-top: 0;
+  }
+  
 }

@@ -26,87 +26,85 @@ function getNextQuestion() {
     shuffleQuestions.forEach((question, questionIndex) => {
         if (questionIndex == currentQuestion) {
             shuffledChoices = question.choices.sort(() => Math.random() - 0.5);
-            questionSpan.innerText = question.question; 
-                shuffledChoices.forEach((choice, choiceIndex) => {
-                    buttons.forEach((btn, buttonIndex) => {
-                        if (choiceIndex == buttonIndex) {
-                            btn.innerText = choice.option;
-                            btn.dataset.points = choice.points;
-                        }
-                    });
-                 });
-                }
-              });
-            }
-
-            buttons.forEach(btn => {
-                btn.addEventListener("click", userSelectedButton);
+            questionSpan.innerText = question.question;
+            shuffledChoices.forEach((choice, choiceIndex) => {
+                buttons.forEach((btn, buttonIndex) => {
+                    if (choiceIndex == buttonIndex) {
+                        btn.innerText = choice.option;
+                        btn.dataset.points = choice.points;
+                    }
+                });
             });
+        }
+    });
+}
 
-            function userSelectedButton(e) {
-                totalPoints += parseInt(e.target.dataset.points);
-                currentQuestion += 1;
-                if (currentQuestion < 12) {
-                    getNextQuestion();
-                } else {
-                    calculateResults();
-                }
-            }
+buttons.forEach(btn => {
+    btn.addEventListener("click", userSelectedButton);
+});
 
-            function calculateResults() {
-                let result = "";
-                if (totalPoints <= 4) {
-                    result = "Thor! Because like Thor, you have a very charming personality! You know how to work a room, with your bold, energetic presence!";
-                } else if (totalPoints >4 && totalPoints <= 8) {
-                    result = "Captain America! Sweet, kind and thoughtful are the words to describe your personailty as well as Cap A! Always working to serve others, because helping others is your main focus.";
-                } else if (totalPoints >8 && totalPoints <= 12) {
-                    result = "Nick Fury! Along with your witty personality, sharp workmanship and even better sense of humor is your ability to take the lead. You are a decisive, capable. principled person.";
-                } else if (totalPoints >12 && totalPoints <= 18) {
-                    result = "Ironman! Love being the center of attention? Whilst being an extrovert, and the center of every room you have a brain that works like no other. You are hugely intelligent, and caring. ";
-                } else if (totalPoints >18 && totalPoints <= 24) {
-                    result = "Black Widow! You are very practical. Although you love to be free, you are drawn to understand how things work. Things never slide by you.";
-                } else if (totalPoints >24 && totalPoints <= 29) {
-                    result = "Hulk! As an extremely emotional indiviual with a slight temper problem, you relate most you the Hulk! Do you have trouble remembering important dates? Well so does he!";
-                } else if (totalPoints >29 && totalPoints <= 36) {
-                    result = "Hawkeye! A very strong introvert. You think very logically, extremely observant of what goes on around you in the real world.";
-                }
+function userSelectedButton(e) {
+    totalPoints += parseInt(e.target.dataset.points);
+    currentQuestion += 1;
+    if (currentQuestion < 12) {
+        getNextQuestion();
+    } else {
+        calculateResults();
+    }
+}
 
-                finalResult.classList.remove("hide");
-                finalResult.innerText = `Your personality is most similar to ${result}`;
-                game.classList.add("hide");
-                restart.classList.remove("hide");
-            }
+function calculateResults() {
+    let result = "";
+    if (totalPoints <= 4) {
+        result = "Thor! Because like Thor, you have a very charming personality! You know how to work a room, with your bold, energetic presence!";
+    } else if (totalPoints > 4 && totalPoints <= 8) {
+        result = "Captain America! Sweet, kind and thoughtful are the words to describe your personailty as well as Cap A! Always working to serve others, because helping others is your main focus.";
+    } else if (totalPoints > 8 && totalPoints <= 12) {
+        result = "Nick Fury! Along with your witty personality, sharp workmanship and even better sense of humor is your ability to take the lead. You are a decisive, capable. principled person.";
+    } else if (totalPoints > 12 && totalPoints <= 18) {
+        result = "Ironman! Love being the center of attention? Whilst being an extrovert, and the center of every room you have a brain that works like no other. You are hugely intelligent, and caring. ";
+    } else if (totalPoints > 18 && totalPoints <= 24) {
+        result = "Black Widow! You are very practical. Although you love to be free, you are drawn to understand how things work. Things never slide by you.";
+    } else if (totalPoints > 24 && totalPoints <= 29) {
+        result = "Hulk! As an extremely emotional indiviual with a slight temper problem, you relate most you the Hulk! Do you have trouble remembering important dates? Well so does he!";
+    } else if (totalPoints > 29 && totalPoints <= 36) {
+        result = "Hawkeye! A very strong introvert. You think very logically, extremely observant of what goes on around you in the real world.";
+    }
 
-            restart.addEventListener("click", resetGame);
+    finalResult.classList.remove("hide");
+    finalResult.innerText = `Your personality is most similar to ${result}`;
+    game.classList.add("hide");
+    restart.classList.remove("hide");
+}
 
-            function resetGame() {
-                restart.classList.add("hide");
-                startBtn.classList.remove("hide");
-                intro.classList.remove("hide");
-                currentQuestion = 0;
-                totalPoints = 0;
-                finalResult.classList.add("hide");
-            }
+restart.addEventListener("click", resetGame);
 
-
-
-
-
-
+function resetGame() {
+    restart.classList.add("hide");
+    startBtn.classList.remove("hide");
+    intro.classList.remove("hide");
+    currentQuestion = 0;
+    totalPoints = 0;
+    finalResult.classList.add("hide");
+}
 
 
 
-const questions = [
-    {
+
+
+
+
+
+
+const questions = [{
         question: "What skill seperates you from others?",
-        choices: [
-            {
+        choices: [{
                 option: "I can shoot on the bullseye.",
                 points: 0
             },
             {
-                 option: "I am extremely rational and intelligent.",
-                 points: 1
+                option: "I am extremely rational and intelligent.",
+                points: 1
             },
             {
                 option: "I have a way with words.",
@@ -120,14 +118,13 @@ const questions = [
     },
     {
         question: "You would consider yourself to be...",
-        choices: [
-            {
+        choices: [{
                 option: "Strong and confident.",
                 points: 3
             },
             {
-                 option: "Responsible and experienced.",
-                 points: 2
+                option: "Responsible and experienced.",
+                points: 2
             },
             {
                 option: "Witty and good-looking.",
@@ -141,14 +138,13 @@ const questions = [
     },
     {
         question: "What motivates you?",
-        choices: [
-            {
+        choices: [{
                 option: "Justice.",
                 points: 0
             },
             {
-                 option: "Duty.",
-                 points: 2
+                option: "Duty.",
+                points: 2
             },
             {
                 option: "Jealousy.",
@@ -162,14 +158,13 @@ const questions = [
     },
     {
         question: "If you were a superhero, you would...",
-        choices: [
-            {
+        choices: [{
                 option: "Hide my idenity to protect your close ones.",
                 points: 0
             },
             {
-                 option: "Live life as if I dont have any powers at all.",
-                 points: 1
+                option: "Live life as if I dont have any powers at all.",
+                points: 1
             },
             {
                 option: "Flaunt my powers to become rich and famous.",
@@ -183,14 +178,13 @@ const questions = [
     },
     {
         question: "People close to you would consider you ...",
-        choices: [
-            {
+        choices: [{
                 option: "Generous and big hearted person.",
                 points: 0
             },
             {
-                 option: "Selfish and a manipulative individual.",
-                 points: 3
+                option: "Selfish and a manipulative individual.",
+                points: 3
             },
             {
                 option: "To have a tough exterior, soft interior.",
@@ -204,14 +198,13 @@ const questions = [
     },
     {
         question: "Would you consider yourself a...",
-        choices: [
-            {
+        choices: [{
                 option: "People pleaser.",
                 points: 0
             },
             {
-                 option: "Loaner.",
-                 points: 3
+                option: "Loaner.",
+                points: 3
             },
             {
                 option: "Extreme extrovert.",
@@ -225,14 +218,13 @@ const questions = [
     },
     {
         question: "In highschool, were you... ",
-        choices: [
-            {
+        choices: [{
                 option: "Class clown.",
                 points: 1
             },
             {
-                 option: "Always had my head buried in books.",
-                 points: 2
+                option: "Always had my head buried in books.",
+                points: 2
             },
             {
                 option: "Too smart for school, so I never went.",
@@ -246,14 +238,13 @@ const questions = [
     },
     {
         question: "It looks like the enemy is closing in, what do you do?",
-        choices: [
-            {
+        choices: [{
                 option: "Cause a distraction so your team can come up behind them.",
                 points: 0
             },
             {
-                 option: "Go handle them on my own.",
-                 points: 3
+                option: "Go handle them on my own.",
+                points: 3
             },
             {
                 option: "Wait for someone else to take charge.",
@@ -267,14 +258,13 @@ const questions = [
     },
     {
         question: "What would be your biggest flaw?",
-        choices: [
-            {
+        choices: [{
                 option: "Ego.",
                 points: 1
             },
             {
-                 option: "Heart.",
-                 points: 0
+                option: "Heart.",
+                points: 0
             },
             {
                 option: "Temper.",
@@ -288,14 +278,13 @@ const questions = [
     },
     {
         question: "Who was your favourite hero when you were young?",
-        choices: [
-            {
+        choices: [{
                 option: "Superman.",
                 points: 0
             },
             {
-                 option: "Batman.",
-                 points: 1
+                option: "Batman.",
+                points: 1
             },
             {
                 option: "Spiderman duh.",
@@ -309,14 +298,13 @@ const questions = [
     },
     {
         question: "What would be your biggest asset to a team?",
-        choices: [
-            {
+        choices: [{
                 option: "My moral compass.",
                 points: 0
             },
             {
-                 option: "My leadership.",
-                 points: 1
+                option: "My leadership.",
+                points: 1
             },
             {
                 option: "My experience.",
@@ -330,14 +318,13 @@ const questions = [
     },
     {
         question: "You'd consider yourself to be",
-        choices: [
-            {
+        choices: [{
                 option: "Always cool, calm and collected.",
                 points: 2
             },
             {
-                 option: "Go with the flow, easy going.",
-                 points: 1
+                option: "Go with the flow, easy going.",
+                points: 1
             },
             {
                 option: "Very nervous unsure person.",

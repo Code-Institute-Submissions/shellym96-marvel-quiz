@@ -1,8 +1,5 @@
 /* jshint esversion: 11 */
 let startBtn = document.getElementById("start-button");
-let restartBtn = document.getElementById("restart-button");
-let gameArea = document.getElementById("game");
-let logo = document.getElementById("logo");
 let intro = document.getElementById("intro");
 let restart = document.getElementById("restart-button");
 let questionSpan = document.getElementById("question");
@@ -12,6 +9,7 @@ let totalPoints = 0;
 let currentQuestion = 0;
 let shuffleQuestions;
 let shuffledChoices;
+let game;
 
 
 startBtn.addEventListener("click", startGame);
@@ -28,7 +26,7 @@ function getNextQuestion() {
     shuffleQuestions.forEach((question, questionIndex) => {
         if (questionIndex == currentQuestion) {
             shuffledChoices = question.choices.sort(() => Math.random() - 0.5);
-            questionSpan.innerText = question.question 
+            questionSpan.innerText = question.question; 
                 shuffledChoices.forEach((choice, choiceIndex) => {
                     buttons.forEach((btn, buttonIndex) => {
                         if (choiceIndex == buttonIndex) {
@@ -71,7 +69,7 @@ function getNextQuestion() {
                     result = "Hulk! As an extremely emotional indiviual with a slight temper problem, you relate most you the Hulk! Do you have trouble remembering important dates? Well so does he!";
                 } else if (totalPoints >29 && totalPoints <= 36) {
                     result = "Hawkeye! A very strong introvert. You think very logically, extremely observant of what goes on around you in the real world.";
-                };
+                }
 
                 finalResult.classList.remove("hide");
                 finalResult.innerText = `Your personality is most similar to ${result}`;
@@ -351,4 +349,4 @@ const questions = [
             }
         ]
     }
-]
+];

@@ -37,28 +37,20 @@ body > footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-}
-
-.socials li {
+  font-size: 40px;
+  color: #3a7cae;
   list-style: none;
-  background-color: #f0f0f0;
-  padding: 15px;
-  border-radius: 10px;
-  border-color: #1b99f9;
-  margin: 1em;
-}
-.socials li:hover {
-  box-shadow: 0px 5px 15px 0 rgb(181, 6, 6) inset,
-    0px 5px 15px 0 rgb(181, 6, 6) inset;
+
 }
 
 .socials li a {
   text-decoration: none;
-  color: navy;
+  color: #3a7cae;
 }
 
 .socials li a i {
   margin-right: 8px;
+  margin-top: 20px;
 }
 
 .container {

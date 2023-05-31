@@ -40,7 +40,7 @@ body > footer {
   font-size: 40px;
   color: #3a7cae;
   list-style: none;
-  padding-top: 35px;
+  padding-top: 45px;
 }
 
 .socials li a {
@@ -103,6 +103,7 @@ body > footer {
   font-size: 90%;
   background-color: rgb(198, 4, 4);
   color: black;
+  font-weight: 500;
   border-radius: 50px;
   padding: 15px 32px 15px 32px;
   margin: 0 auto;

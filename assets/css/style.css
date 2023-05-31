@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:wght@300&family=Lato:wght@300&family=Oswald&family=PT+Sans+Caption&family=Playfair+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:wght@300&family=Lato:wght@300&family=Merriweather&family=Oswald&family=PT+Sans+Caption&family=Playfair+Display&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@ body > footer {
 }
 
 #logo {
-  font-family: Bangers, sans-serif;
+  font-family: Merriweather, sans-serif;
   font-size: 65px;
   color: rgb(181, 6, 6);
   text-align: left;
@@ -64,14 +64,14 @@ body > footer {
 }
 
 .li1 {
-  font-family: PT Sans Caption, sans-serif;
+  font-family: Merriweather, sans-serif;
   text-align: left;
   font-size: 22px;
   color: #3a7cae;
   padding-bottom: 30px;
 }
 .li2 {
-  font-family: PT Sans Caption, sans-serif;
+  font-family: Merriweather, sans-serif;
   text-align: left;
   font-size: 22px;
   color: silver;
@@ -79,14 +79,14 @@ body > footer {
 }
 
 .li3 {
-  font-family: PT Sans Caption, sans-serif;
+  font-family: Merriweather, sans-serif;
   text-align: left;
   font-size: 22px;
   color: rgb(198, 4, 4);
 }
 
 #about-game {
-  font-family: PT Sans Caption, sans-serif;
+  font-family: Merriweather, sans-serif;
   text-align: center;
   font-size: 35px;
   color: silver;
@@ -134,7 +134,7 @@ body > footer {
   color: navy;
   background-color: rgb(228, 224, 224);
   text-align: center;
-  font-family: PT Sans Caption, sans-serif;
+  font-family: Merriweather, sans-serif;
   display: inline-block;
   margin: 10px;
   font-weight: 100;

@@ -56,7 +56,7 @@ function userSelectedButton(e) {
 function calculateResults() {
     let result = "";
     if (totalPoints <= 4) {
-        result = "Thor! Because like Thor, you have a very charming personality! You know how to work a room, with your bold, energetic presence!";
+        result = `Thor! Because like Thor, you have a very charming personality! You know how to work a room, with your bold, energetic presence!`;
     } else if (totalPoints > 4 && totalPoints <= 8) {
         result = "Captain America! Sweet, kind and thoughtful are the words to describe your personailty as well as Cap A! Always working to serve others, because helping others is your main focus.";
     } else if (totalPoints > 8 && totalPoints <= 12) {

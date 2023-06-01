@@ -13,7 +13,7 @@ https://ui.dev/amiresponsive?url=https://shellym96.github.io/marvel-quiz
 
 
 
-![screenshot](assets/documentation/amiresponsive.png)
+![screenshot](documentation/amiresponsive.png)
 
 
 ## UX
@@ -32,7 +32,7 @@ The colours I chose to use are the original colours of the Avengers. Especially 
 
 I used [coolors.co]https://coolors.co/e4e0e0-c0c0c0-b50606-3a7cae-0b0573 to generate my colour palette.
 
-![screenshot](documentation/coolors.png)
+![screenshot](documentation/coolers.png)
 
 ### Typography
 
@@ -54,15 +54,15 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-home.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-home.png) |
+| Mobile | ![screenshot](documentation/mobile-home.png) |
+| Desktop | ![screenshot](documentation/desktop-home.png) |
 
 ### Questions and answers page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Tablet | ![screenshot](documentation/wireframes/tablet-qs.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-qs.png) |
+| Tablet | ![screenshot](documentation/tablet-qs.png) |
+| Desktop | ![screenshot](documentation/desktop-qs.png) |
 
 
 ## Features

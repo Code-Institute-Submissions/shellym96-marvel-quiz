@@ -183,7 +183,8 @@ body > footer {
   text-align: center;
   background-color: silver;
   opacity: 0.5;
-  width: 50%;
+  width: 40%;
+  margin-top: 15px;
 }
 
 .hide {

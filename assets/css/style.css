@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:wght@300&family=Lato:wght@300&family=Merriweather&family=Oswald&family=PT+Sans+Caption&family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:wght@300&family=Lato:wght@300&family=Merriweather&family=Oswald&family=PT+Sans+Caption&family=Playfair+Display&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -182,7 +182,7 @@ body > footer {
   color: black;
   text-align: center;
   background-color: silver;
-  opacity: 0.5 ;
+  opacity: 0.5;
   width: 50%;
 }
 
@@ -190,10 +190,8 @@ body > footer {
   display: none !important;
 }
 
-
 /* media screen sizes 960 and below */
 @media screen and (max-width: 960px) {
-  
   #logo img {
     width: 70%;
     height: auto;
@@ -219,9 +217,8 @@ body > footer {
   }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   #intro {
     padding-top: 0;
   }
-  
 }

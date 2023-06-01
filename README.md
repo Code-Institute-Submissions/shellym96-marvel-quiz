@@ -8,8 +8,7 @@ I hoped to accomplish a strong professional front to the webpage, while still ha
 
 I wanted to ensure the user that the correct result to match their own personality. To achieve this I had done research on each Avengers personality type, then to match it up with my answers I done the math of the total points and the results for them to match the user correctly. This was really important to me to have this working correctly , so the user had the full experience of a Marvel personality quiz.
 
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
+Here's my deployed site as an example:
 https://ui.dev/amiresponsive?url=https://shellym96.github.io/marvel-quiz
 
 

@@ -12,16 +12,19 @@ body {
 body {
   background-color: #081621;
   background-image: url(../images/avengers1.jpeg);
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
 }
-
+body footer {
+  margin-top: auto;
+}
+/*
 body > footer {
   position: sticky;
   height: auto;
-}
+}*/
 
 #logo {
   font-family: Merriweather, sans-serif;

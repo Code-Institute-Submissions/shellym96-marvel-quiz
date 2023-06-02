@@ -14,20 +14,17 @@
 
 <body>
     <main class="container">
-
+        <!-- logo -->
         <section id="logo">
             <img src="assets/images/logo.png" alt="avengers logo">
         </section>
 
+        <!-- intro -->
         <section id="intro">
             <ul>
-                <li class="li1"> Click start quiz to find out if your personality is the same as your
-                    <br>
-                    favourite superhero? </li>
+                <li class="li1"> Click start quiz to find out if your personality is the same as your favourite superhero? </li>
                 <li class="li2"> Blast through 12 multiple choice questions. </li>
-                <li class="li3"> Each personality question, will bring you one step closer
-                    <br>
-                    to your superhero match!
+                <li class="li3"> Each personality question, will bring you one step closer to your superhero match!
                 </li>
             </ul>
 
@@ -36,11 +33,13 @@
             <h3 id="about-game">LET'S GO!</h3>
         </section>
 
+        <!-- start button -->
         <section id="start">
             <button id="start-button"> START QUIZ </button>
         </section>
 
 
+        <!-- quiz game area -->
         <section id="game" class="hide">
             <span id="question"></span>
             <br>
@@ -53,10 +52,16 @@
             </div>
         </section>
 
-        <p id="final-result" class="hide"></p>
+        <!-- player results -->
+        <div id="results" class="hide">
+            <p id="final-result"></p>
+        </div>
+
+        <!-- restart button -->
         <button id="restart-button" class="hide">Play again</button>
     </main>
 
+    <!-- footer and social media icons -->
     <footer>
         <ul class="socials">
             <li>
@@ -77,7 +82,9 @@
         </ul>
     </footer>
 
+    <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/552664b17c.js" crossorigin="anonymous"></script>
+    <!-- scripts -->
     <script src="assets/js/script.js" defer></script>
 
 </body>

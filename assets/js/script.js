@@ -15,6 +15,7 @@ let game = document.getElementById("game");
 
 startBtn.addEventListener("click", startGame);
 
+// function to start the game
 function startGame() {
     game.classList.remove("hide");
     startBtn.classList.add("hide");
@@ -23,6 +24,7 @@ function startGame() {
     getNextQuestion();
 }
 
+// function to go to the next question after one is answered
 function getNextQuestion() {
     shuffleQuestions.forEach((question, questionIndex) => {
         if (questionIndex == currentQuestion) {
@@ -40,10 +42,12 @@ function getNextQuestion() {
     });
 }
 
+// buttons for each question
 buttons.forEach(btn => {
     btn.addEventListener("click", userSelectedButton);
 });
 
+// function for when the user selects a button to add points
 function userSelectedButton(e) {
     totalPoints += parseInt(e.target.dataset.points);
     currentQuestion += 1;
@@ -73,6 +77,7 @@ function calculateResults() {
         result = "Hawkeye! A very strong introvert. You think very logically, extremely observant of what goes on around you in the real world.";
     }
 
+    // add hide and remove hides for when certain buttons are clicked
     game.classList.add("hide");
     finalResult.innerText = `Your personality is most similar to ${result}`;
     results.classList.remove("hide");
@@ -81,6 +86,7 @@ function calculateResults() {
 
 restart.addEventListener("click", resetGame);
 
+// function to reset the game
 function resetGame() {
     restart.classList.add("hide");
     startBtn.classList.remove("hide");

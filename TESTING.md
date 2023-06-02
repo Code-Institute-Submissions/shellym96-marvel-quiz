@@ -49,6 +49,19 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Home | Mobile | ![screenshot](documentation/lighthouse-mobile-home.png) | All high greens |
 | Questions/answers | Mobile | ![screenshot](documentation/lighthouse-mobile-qs.png) | All high greens |
 
+## Defensive Programming
+
+Defensive programming was manually tested with the below user acceptance testing:
+
+| Page | User Action | Expected Result | Pass/Fail | Comments |
+| --- | --- | --- | --- | --- |
+| Home Page | | | | |
+| | Start button | Brings user to questionnaire page | Pass | |
+| | Socials in footer | Redirection to social media pages | Pass | |
+| Questionnaire  Page | | | | |
+| | Answer buttons| Directs you to the next question | Pass | |
+| | Restart Button| Redirects you to the home page| Pass | |
+
 ## Bugs
 
 - My first bug I came across was when I started to do script.js. I had done my start-button in html and css, but when I tried to put the button to use to start the quiz and it would not work , although I had started the javascript. I had exhausted options I knew of, and checked google until I had to contact student support and they helped me figure out the bug that was in the css. There was a display flex taking priority so I added display:none !important , to my button and that done the job. | Corrected |

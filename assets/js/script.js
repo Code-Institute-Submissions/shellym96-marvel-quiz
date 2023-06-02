@@ -4,6 +4,7 @@ let intro = document.getElementById("intro");
 let restart = document.getElementById("restart-button");
 let questionSpan = document.getElementById("question");
 let buttons = document.querySelectorAll(".btn");
+let results = document.getElementById("results");
 let finalResult = document.getElementById("final-result");
 let totalPoints = 0;
 let currentQuestion = 0;
@@ -53,6 +54,7 @@ function userSelectedButton(e) {
     }
 }
 
+// this function counts how many points a user has, it then calculates the points to give the results 
 function calculateResults() {
     let result = "";
     if (totalPoints <= 4) {
@@ -71,9 +73,9 @@ function calculateResults() {
         result = "Hawkeye! A very strong introvert. You think very logically, extremely observant of what goes on around you in the real world.";
     }
 
-    finalResult.classList.remove("hide");
-    finalResult.innerText = `Your personality is most similar to ${result}`;
     game.classList.add("hide");
+    finalResult.innerText = `Your personality is most similar to ${result}`;
+    results.classList.remove("hide");
     restart.classList.remove("hide");
 }
 

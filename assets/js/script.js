@@ -78,6 +78,7 @@ function calculateResults() {
     }
 
     // add hide and remove hides for when certain buttons are clicked
+    finalResult.classList.remove("hide");
     game.classList.add("hide");
     finalResult.innerText = `Your personality is most similar to ${result}`;
     results.classList.remove("hide");

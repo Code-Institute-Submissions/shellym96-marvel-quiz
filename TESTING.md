@@ -28,6 +28,16 @@ See link below:
 | --- | --- | --- | --- |
 | style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshellym96.github.io%2Fmarvel-quiz) | ![screenshot](documentation/css-validation-style.png) | Pass: No Errors |
 
+
+### Javascript
+
+I have used the recommended [JShint Validator] (https://jshint.com/) to validate all of my Javascript files.
+
+
+| File | JShint URL | Screenshot | Notes |
+| --- | --- | --- | --- |
+| script.js | [JShint](https://jshint.com/) | ![screenshot](documentation/js-validation-script.png) | Pass: No Errors |
+
 ## Responsiveness
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
